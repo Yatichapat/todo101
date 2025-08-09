@@ -1,11 +1,12 @@
-version: "1.0"
+version: "3.8"
+
 services:
   mongo:
     image: mongo
     ports:
       - "27017:27017"
     volumes:
-      - C:\Users\acer\todo101:/data/db
+      - C:\Users\acer\todo101\data:/data/db
 
   todo-backend:
     build: ./backend
